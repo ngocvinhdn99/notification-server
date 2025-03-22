@@ -23,3 +23,15 @@ func main() {
 	log.Println("🚀 Server đang chạy trên http://localhost:8080")
 	e.Start(":8080")
 }
+
+// package main
+
+// import (
+// 	"draft-notification/grpc"
+// 	"draft-notification/queue"
+// )
+
+// func main() {
+// 	queue.RunQueue()
+// 	grpc.RunGrpc()
+// }

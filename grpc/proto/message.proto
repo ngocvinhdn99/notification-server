@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "draft-notification/proto";
+
+service Messenger {
+  rpc SendMessage (MessageRequest) returns (MessageResponse) {}
+}
+
+message MessageRequest {
+  string content = 1;
+}
+
+message MessageResponse {
+  string result = 1;
+}
+
